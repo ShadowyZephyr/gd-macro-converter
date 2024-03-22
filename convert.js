@@ -27,8 +27,10 @@ function dothething() {
         console.log(nameCheck);
         if (nameCheck[nameCheck.length-1] == 'json' && nameCheck[nameCheck.length-2] == 'gdr') {
             filetype = 'gdr.json'
+            document.getElementById('errormessage').innerHTML = '';
         } else if (nameCheck[nameCheck.length-1] == 'txt') {
             filetype = 'txt'
+            document.getElementById('errormessage').innerHTML = '';
         } else {
             document.getElementById('errormessage').innerHTML = 'Invalid file type: files must be ybot .txt or .gdr.json'
             return;
