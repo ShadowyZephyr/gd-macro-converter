@@ -96,7 +96,7 @@ function convertYbot(ybot) {
     for (let i = 1; i < f.length; i++) {
         const l = f[i].split(" ");
         const obj = {
-            "2p": !Boolean(Number(l[2])), //?
+            "2p": Boolean(Number(l[2])),
             "btn": convbtn(l[3]),
             "down": Boolean(Number(l[1])),
             "frame": Number(l[0])+1
